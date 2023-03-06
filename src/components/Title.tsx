@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 const Title = () => {
   return (
-    <div className='h-screen w-full flex flex-col items-center bg-[#212139] bg-[url("../../assets/asfalt-light.png")] pt-12 px-8'>
+    <div className='h-screen w-full flex flex-col items-center bg-[#212139] pt-12 px-8'>
         <div className='logo w-48'>
             <Image alt='logo' src={Logo}/>
         </div>
