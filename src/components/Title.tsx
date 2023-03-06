@@ -13,10 +13,10 @@ const Title = () => {
         <div className='hero w-full mix-blend-lighten my-8'>
             <Image alt='kapela' src={Kapela}/>
         </div>
-        <div className="onas bg-[#50A983] w-[80%] p-4 text-[1.5rem] text-white rounded-md text-center mb-8">
-            <Link href="/"><button className='uppercase'>o nás</button></Link>
-        </div>
-        <div className='flex flex-row justify-evenly w-full gap-2 text-white'>
+        <Link href="/" className="onas w-full mb-8 flex justify-center">
+            <button className='uppercase  bg-[#50A983] p-3 w-[80%] text-[1.5rem] text-white rounded-md '>o nás</button>
+        </Link>
+        <div className='flex flex-row justify-center w-full gap-2 text-white'>
             <Link href="/"><button className="kontakt uppercase border-2 border-[#50A983] py-1 px-2 text-[1rem] basis-1/2 rounded-md">kontakty</button></Link>
             <Link href="/"><button className="poradatele uppercase border-2 border-[#50A983] py-1 px-2 text-[1rem] basis-1/2 rounded-md">pro pořadatele</button></Link>
         </div>
