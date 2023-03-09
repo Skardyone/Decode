@@ -32,15 +32,15 @@ const Koncerty = () => {
   }, [])
 
   return (
-    <div className='h-full bg-[#212139] py-8 px-12 justify-center'>
+    <div className='h-full bg-[#212139] py-8 px-6 justify-center'>
       <h1 className='uppercase text-white text-[1.8rem] text-center mb-5'>koncerty</h1>
       <div className='flex flex-col gap-2'>     
           {events.map((event, index) => {
           return (
           <div key={index} className="text-white uppercase text-[0.6rem] flex flex-row justify-between font-bold items-center  border-b-2 border-white/20" >
-            <h2 className='basis-1/4 p-1'>{event.cas.getDate()}/{event.cas.getMonth()}/{event.cas.getFullYear()}</h2>
+            <h2 className='basis-1/4 p-1 text-[#50A983]'>{event.cas.getDate()}/{event.cas.getMonth()}/{event.cas.getFullYear()}</h2>
             <h2 className='basis-1/4 p-1'>{event.nazev}</h2>
-            <h2 className='basis-1/4 p-1'>{event.cas.getHours()}:{(event.cas.getMinutes()<10?"0":"")+(event.cas.getMinutes())}</h2>
+            <h2 className='basis-1/4 p-1 text-[#50A983]'>{event.cas.getHours()}:{(event.cas.getMinutes()<10?"0":"")+(event.cas.getMinutes())}</h2>
             <h2 className='basis-1/4 p-1'>{event.misto}</h2>
           </div>
           )

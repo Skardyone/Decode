@@ -9,7 +9,7 @@ import Link from 'next/link';
 const Title = () => {
   return (
     <div className='h-full w-full flex flex-col items-center bg-[#212139] py-8 px-8'>
-        <div className='logo w-max-64'>
+        <div className='logo w-44'>
             <Image alt='logo' src={Logo}/>
         </div>
         <div className='hero w-full mix-blend-lighten mb-8'>
