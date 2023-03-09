@@ -14,15 +14,15 @@ const Band = () => {
                 <div className="basis-1/2 flex items-center text-[1.8rem] text-white uppercase text-left"><h2 className='w-full'>Verunka Kasíková</h2></div>
                 <div className='basis-1/2 flex items-center'><Image src={Verunka} alt="" className='h-auto'/></div>
             </div>
-            <div className="verunka w-full flex flex-row-reverse justify-center h-auto -mb-10">
+            <div className="verunka w-full flex flex-row-reverse justify-center h-auto -mb-5">
                 <div className="basis-1/2 flex items-center text-[1.8rem] text-white uppercase text-right"><h2 className='w-full'>Vláďa Čech</h2></div>
                 <div className='basis-1/2 flex items-center object-contain'><Image src={Vlada} alt="" className='h-auto' /></div>
             </div>
-            <div className="verunka w-full flex flex-row justify-center h-auto -mb-10">
+            <div className="verunka w-full flex flex-row justify-center h-auto -mb-5">
                 <div className="basis-1/2 flex items-center text-[1.8rem] text-white uppercase text-left"><h2 className='w-full'>Martin Štembera</h2></div>
                 <div className='basis-1/2 flex items-center object-contain'><Image src={Martin} alt="" className='h-auto' /></div>
             </div>
-            <div className="verunka w-full flex flex-row-reverse justify-center h-auto -mb-6">
+            <div className="verunka w-full flex flex-row-reverse justify-center h-auto -mb-3">
                 <div className="basis-1/2 flex items-center text-[1.8rem] text-white uppercase text-right"><h2 className='w-full'>Fíla Fiedler</h2></div>
                 <div className='basis-1/2 flex items-center object-contain'><Image src={Filip} alt="" className='h-auto' /></div>
             </div>
