@@ -26,6 +26,7 @@
     "react-dom": "18.2.0",
     "react-h5-audio-player": "^3.8.6",
     "react-icons": "^4.8.0",
+    "react-modal": "^3.16.1",
     "react-scroll": "^1.8.9",
     "sanity": "^3.0.0",
     "styled-components": "^5.2.0",
@@ -35,6 +36,7 @@
   "devDependencies": {
     "@sanity/eslint-config-studio": "^2.0.1",
     "@types/react": "^18.0.25",
+    "@types/react-modal": "^3.13.1",
     "@types/react-scroll": "^1.8.6",
     "@types/styled-components": "^5.1.26",
     "@types/wavesurfer.js": "^6.0.3",

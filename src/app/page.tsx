@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ['latin'] })
 export default function Home() {
   return (
     <main>
-      <div className=''>
+      <div className='bg-[#212139]'>
         <Socials/>
         <Sticky/>
       <section className="title">
@@ -34,6 +34,7 @@ export default function Home() {
       <section id="koncerty" className="koncerty">
         <Koncerty/>
       </section>
+      <Divider/>
       </div>
     </main>
   )
