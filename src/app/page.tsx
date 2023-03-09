@@ -6,6 +6,7 @@ import About from '@/components/About'
 import Band from '@/components/Band'
 import Sticky from '@/components/Sticky'
 import Koncerty from '@/components/Koncerty'
+import Player from '@/components/Player'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,6 +24,9 @@ export default function Home() {
       </section>
       <section className="band">
         <Band/>
+      </section>
+      <section className="player">
+        {/*<Player/>*/ }
       </section>
       <section id="koncerty" className="koncerty">
         <Koncerty/>
