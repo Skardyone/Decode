@@ -37,7 +37,7 @@ export default function Home() {
       </section>
       <Divider/>
       <section className="player">
-        {/*<Player/>*/ }
+        {<Player/> }
       </section>
       <section id="koncerty" className="koncerty">
         <Koncerty/>
