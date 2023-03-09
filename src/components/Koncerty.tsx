@@ -33,7 +33,7 @@ const Koncerty = () => {
   }, [])
 
   return (
-    <motion.div initial={{y:120, opacity:0}} whileInView={{y:0, opacity:1}} viewport={{once:true}} transition={{duration:1}} className='h-full bg-[#212139] py-8 px-6 justify-center'>
+    <div className='h-full bg-[#212139] py-8 px-6 justify-center'>
       <h1 className='uppercase text-white text-[1.8rem] text-center mb-5'>koncerty</h1>
       <div className='flex flex-col gap-2'>     
           {events.map((event, index) => {
@@ -47,7 +47,7 @@ const Koncerty = () => {
           )
           })}        
       </div>
-    </motion.div>
+    </div>
   )
 }
 
