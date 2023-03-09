@@ -9,6 +9,7 @@ import Koncerty from '@/components/Koncerty'
 import Player from '@/components/Player'
 import Divider from '@/components/Divider'
 import Head from "next/head"
+import Galerka from '@/components/Galerka'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -42,6 +43,9 @@ export default function Home() {
         <Koncerty/>
       </section>
       <Divider/>
+      <section className="galerka">
+        <Galerka/>
+      </section>
       </div>
     </main>
   )
