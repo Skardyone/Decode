@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react'
 import Logo from "../../assets/design/decode_final_bile.png"
-import Kapela from "../../assets/design/kapela_vyrezy.png"
+import Kapela from "../../assets/design/kapela_vyrez.png"
 import Image from 'next/image'
 import { Link as ScrollLink } from 'react-scroll'
 import Link from 'next/link';
