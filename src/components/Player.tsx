@@ -11,36 +11,51 @@ interface Song{
   url: string;
 }
 
-
 const Player = () => {
 
   const [songs, setSongs] = useState<Song[]>([]);
+  const [currentIndex, setcurrentIndex] = useState(0)
 
   const query = groq`
    *[_type == "playlist"] {
     "name":nazev,
     "url":song.asset->url}
   `
-
-  /***useEffect(() => {
-    client.fetch<Song[]>(query)
-    .then((files) => {
-      const songs = files.map(file => {
-        return {...name,url};
-      });
-      setSongs(songlist);
-    })
-      
-      console.log(songs);
-    })
-  }, []);**/
  
+  useEffect(() => {
+    client.fetch<Song[]>(query).then(songs => {
+      const songList = songs.map(song => {
+        return {...song}
+      });
+      setSongs(songList);
+      
+    })
+  }, []) 
+  console.log(songs[0])
+  const handleClickPrevious = (): void => {
+   if (currentIndex < 1 && currentIndex !== 0) {
+    setcurrentIndex(currentIndex - 1)
+   } else {
+    setcurrentIndex(0)
+   }
+  }
+  const handleClickNext = (): void => {
+    if ( currentIndex < songs.length -1) {
+      setcurrentIndex(currentIndex + 1)
+     } else {
+      setcurrentIndex(songs.length -1)
+     }
+  }
+
  
   return (
-    <div>         
-          <AudioPlayer src="https://cdn.sanity.io/files/60ctmdtx/production/03d3724f78ada7607754fed5129bb443cb086b8f.mp3
-" autoPlay={false}/>
-            
+    <div className="h-auto flex flex-col justify-center">       
+           { songs.length > 0 ? <AudioPlayer src={songs[currentIndex].url} autoPlayAfterSrcChange={true} className="bg-transparent text-white uppercase text-center shadow-none" autoPlay={false} customVolumeControls={[]}
+             customAdditionalControls={[]} showSkipControls={true} showJumpControls={false}
+             header={songs[currentIndex].name} onClickPrevious={handleClickPrevious} onClickNext={handleClickNext}
+             />   : <div></div>   
+           }
+         
     </div>
   )
 }
