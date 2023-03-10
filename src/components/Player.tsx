@@ -1,6 +1,6 @@
 "use client";
 import AudioPlayer from "react-h5-audio-player"
-import 'react-h5-audio-player/lib/styles.css'
+import './audioStyles.css'
 import { client } from "../app/api/SanityClient"
 import { groq } from "next-sanity"
 import { useEffect, useState } from "react";
@@ -51,7 +51,7 @@ const Player = () => {
   return (
     <div className="h-auto flex flex-col justify-center">       
            { songs.length > 0 ? <AudioPlayer src={songs[currentIndex].url} autoPlayAfterSrcChange={true} className="bg-transparent text-white uppercase text-center shadow-none" autoPlay={false} customVolumeControls={[]}
-             customAdditionalControls={[]} showSkipControls={true} showJumpControls={false}
+             customAdditionalControls={[]} showSkipControls={true} showJumpControls={false} 
              header={songs[currentIndex].name} onClickPrevious={handleClickPrevious} onClickNext={handleClickNext}
              />   : <div></div>   
            }
